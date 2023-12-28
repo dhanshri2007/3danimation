@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+      body{
+        background-image: url(https://deowgxgt4vwfe.cloudfront.net/uploads/1584449457_large.jpg);
+        background-size: cover;
+      }
+        .main{
+            display: flex;
+            justify-content: center;
+            margin-top: 200px;
+            perspective: 500px;
+        }
+        .inner-card{
+            width: 300px;
+            position: relative;
+            height: 500px;
+            transition: transform 0.3s;
+            transform-style: preserve-3d;
+          
+        }
+        .front-card,
+        .back-card{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color:rgb(128, 199, 217) ;
+            backface-visibility: hidden;
+            border: solid;
+          
+            
+        }
+        .front-card{
+            background-image: url(https://img.freepik.com/premium-photo/birthday-cake-wedding-cake-with-flowers-happy-birthday-cake-with-macaroon-flower_34142-711.jpg?w=2000);
+            background-size: cover;
+        }
+        .back-card{
+            transform: rotateY(180deg);
+            padding: 20px;
+        }
+        .card :hover.inner-card{
+            transform: rotateY(180deg);
+    
+        }
+        p{
+            text-align: center;
+            text-transform: capitalize;
+            
+        }
+        h3{
+            text-align: center;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <div class="card">
+            <div class="inner-card">
+                <div class="front-card">
+                    
+                </div>
+                <div class="back-card">
+                    <h2>HAPPY BIRTHDAY DAD❤🌈🌎</h2>
+                    <p>you are the biggest inspiration and role model for me,you are the one who taught me to be strong and kind to everyone!My wish for you dear dad is that we spend many more years togather in prosperous life,good health and happiness.And ones again💝 wish you a many many happy returns of the day dear dad💝</p>
+
+                    <h3>i love you dad💖🤞</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
